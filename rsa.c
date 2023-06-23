@@ -24,21 +24,29 @@ int main(int argc, char **argv)
 
 		for (q = 2; q <= num / 2; q++)
 		{
-
+			if (!is_prime(q))
+			{
+				continue;
+			}
 			for (p = 2; p <= num / q; p++)
 			{
+
+				if (!is_prime(p))
+				{
+					continue;
+				}
+
 				if (num == p * q)
 				{
 					printf("%lu=%lu*%lu\n", num, p, q);
 					break;
 				}
-			}
 
+			}
 			if (num == p * q)
 			{
 				break;
 			}
-
 		}
 	}
 
