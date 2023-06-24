@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 				p = num / q;
 				if (is_prime(p))
 				{
-					printf("%lu = %lu * %lu\n", num, p, q);
+					printf("%lu=%lu*%lu\n", num, p, q);
 					break;
 				}
 			}
