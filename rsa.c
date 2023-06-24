@@ -32,12 +32,12 @@ int main(int argc, char **argv)
 	{
 		num = strtoul(buff_line, NULL, 10);
 
-		for (p = 2; p <= num / 2; p++)
+		for (q = 2; q <= num / 2; q++)
 		{
-			if (is_prime(p) && num % p == 0)
+			if (is_prime(q) && num % q == 0)
 			{
-				q = num / p;
-				if (is_prime(q))
+				p = num / q;
+				if (is_prime(p))
 				{
 					printf("%lu = %lu * %lu\n", num, p, q);
 					break;
