@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 	FILE *file = NULL;
 	char *buff_line = NULL;
 	size_t buff_size = 0;
-	unsigned long int num_readed = 0, p_first = 0, q_second = 0;
+	unsigned long int num_readed = 0, first = 0, second = 0;
 
 	if (argc != 2)
 	{
@@ -30,12 +30,12 @@ int main(int argc, char **argv)
 	{
 		num_readed = strtoul(buff_line, NULL, 10);
 
-		for (q_second = 2; q_second <= num_readed; q_second++)
+		for (second = 2; second <= num_readed; second++)
 		{
-			if (num_readed % q_second == 0)
+			if (num_readed % second == 0)
 			{
-				p_first = num_readed / q_second;
-				printf("%lu=%lu*%lu\n", num_readed, p_first, q_second);
+				first = num_readed / second;
+				printf("%lu=%lu*%lu\n", num_readed, first, second);
 				break;
 			}
 		}
