@@ -76,7 +76,7 @@ The output will be:
 ```plaintext
 15=3*5
 21=3*7
-35=5\*7
+35=5*7
 ```
 
 For more examples, refer to the code files.
